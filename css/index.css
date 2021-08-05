@@ -295,7 +295,7 @@
   height: 614px; */
   padding: 0;
 }
-.note-pro-mi {
+/* .note-pro-mi {
   position: relative;
   float: left;
   height: 300px;
@@ -304,7 +304,7 @@
   margin-left: 14px;
   margin-bottom: 14px;
   background: #fff;
-}
+} */
 .note-pro-mi a {
   display: block;
   height: 100%;
@@ -464,3 +464,29 @@
     no-repeat center 0;
   text-indent: -9999em;
 }
+
+.note-pro-mi {
+  position: relative;
+  float: left;
+  height: 300px;
+  padding: 0;
+  width: 234px;
+  margin-left: 14px;
+  margin-bottom: 14px;
+  background: #fff;
+  transition-duration: 0.5s;
+}
+.note-pro-mi:hover {
+  -webkit-box-shadow: #ccc 0px 10px 10px;
+  -moz-box-shadow: #ccc 0px 10px 10px;
+  box-shadow: #ccc 0px 10px 10px;
+  transform: translateY(-0.08rem);
+}
+/* .note-pro-mi:hover {
+  /* 背景 */
+/* box-shadow: 0 10px 10px rgba(0.5, 0.3, 0.5, 0.5); */
+/* box-shadow: 水平位置 垂直位置 模糊距离 阴影尺寸(影子大小) 内外阴影inset，默认外阴影 */
+/*//向上浮动*/
+/* transform: translateY(-0.08rem); */
+/* 向上浮动了8个像素 */
+/* } */
