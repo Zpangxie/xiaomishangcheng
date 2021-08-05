@@ -393,6 +393,12 @@
   padding: 0;
   width: 100%;
 }
+
+.service-item-box > ul > li.service-item-selected .icon-checkbox em {
+  background-color: #ff6700;
+  border-color: #ff6700;
+}
+
 .service-item-box li {
   border: 1px solid #e0e0e0;
   left: 0;
@@ -406,7 +412,6 @@
 }
 .service-item-box li .icon-checkbox {
   display: block;
-  border-radius: 50%;
   width: 36px;
   height: 36px;
   line-height: 36px;
@@ -418,16 +423,14 @@
   margin-top: 10px;
 }
 .service-item-box li .icon-checkbox em {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
   border: 1px solid #b0b0b0;
-  font-style: normal;
-  line-height: 24px;
+  line-height: 14px;
   color: #fff;
   font-size: 12px;
-  vertical-align: middle;
-  margin-top: -4px;
 }
 .service-item-box li img {
   width: 50px;
@@ -469,20 +472,22 @@
   margin-top: 5px;
   font-size: 14px;
 }
+
 .service-item-box li .agreement-box .icon-checkbox {
-  float: none;
-  margin: 0;
   width: 14px;
   height: 14px;
   line-height: 14px;
+  font-size: initial;
+  margin: 0;
+  margin-top: 1px;
   margin-right: 5px;
-  margin-top: 2px;
   border-radius: 2px;
-  display: inline-block;
 }
 .service-item-box li .agreement-box .icon-checkbox em {
-  margin-top: 0;
-  vertical-align: inherit;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  display: inline-block;
   border-radius: 2px;
 }
 .service-item-box li .agreement-box a {
