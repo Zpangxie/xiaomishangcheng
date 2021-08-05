@@ -361,20 +361,15 @@
   height: 42px;
   position: relative;
   border: 1px solid #e0e0e0;
-  list-style: none;
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
   float: left;
   width: 292px;
   font-size: 16px;
   text-align: center;
   display: list-item;
 }
-
-.buy-option li:first-child {
-  z-index: 3;
-  border-color: #ff6700;
+.active {
+  z-index: 999;
+  border-color: #ff6700 !important;
 }
 .buy-option li:nth-child(2n) {
   margin-right: 0;
@@ -765,4 +760,10 @@
   background: url(https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/slogan2020.png)
     no-repeat center 0;
   text-indent: -9999em;
+}
+.note-pro-mi:hover {
+  /* 盒子阴影 */
+  box-shadow: 4px 20px 40px 5px rgba(0, 0, 0, 0.1);
+  /* 盒子向上移动效果，改变上外边距 */
+  margin-top: 8px;
 }

@@ -205,7 +205,7 @@
                                     <div class="buy-box-child">
                                         <div class="option-box">
                                             <div class="title">选择版本</div>
-                                            <ul class="clearfix">
+                                            <ul class="clearfix" id="ad">
                                                 <li class="active">
                                                     <a href="">6GB+128GB</a>
                                                 </li>
@@ -220,7 +220,7 @@
                                         <div class="option-box">
                                             <div class="title">选择颜色</div>
                                         </div>
-                                        <ul class="clearfix">
+                                        <ul class="clearfix" id="ad">
                                             <li class="active">
                                                 <a href="">幻青</a>
                                             </li>
@@ -590,6 +590,19 @@
             </div>
         </div>
     </div>
+    <script src="/js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#ad li").click(function () {
+                $(this).siblings('li').removeClass('active');  // 删除其他兄弟元素的样式
+
+                $(this).addClass('active');                            // 添加当前元素的样式
+                return false;
+            });
+
+        });
+
+    </script>
 </body>
 
 </html>
